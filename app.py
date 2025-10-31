@@ -34,7 +34,7 @@ def zebra_stripes(row):
 header_style = {
     'selector': 'th.col_heading', # 'th' é o elemento do cabeçalho
     'props': [
-        ('background-color', '#538DD5'), # Novo azul do cabeçalho
+        ('background-color', '#8DB4E2'), # Novo azul do cabeçalho
         ('color', 'white'),             # Letras brancas
         ('font-weight', 'bold')
     ]
@@ -50,7 +50,7 @@ st.set_page_config(page_title="Processador de Planilhas", layout="centered")
 
 # Título principal do aplicativo
 st.title("🚀 Processador de Planilhas de Alunos")
-st.write("Esta aplicação cruza a planilha de cobranças com a de CPFs, insere a nova coluna e aplica a formatação visual.")
+st.write("Esta aplicação cruza a planilha de cobranças com a de CPFs.")
 
 # --- 2.1. Upload dos Arquivos ---
 
@@ -127,7 +127,7 @@ if file_cobrancas is not None and file_cpfs is not None:
             st.download_button(
                 label="Clique aqui para baixar a planilha final (.xlsx)",
                 data=output_buffer,
-                file_name="Contas_com_CPF_Estilizado.xlsx",
+                file_name="Contas_com_CPF.xlsx",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
 
