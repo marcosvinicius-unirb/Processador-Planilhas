@@ -21,9 +21,9 @@ def zebra_stripes(row):
     e garante que o texto da célula seja preto.
     """
     # Cor 1: #8DB4E2
-    cor_fundo1 = 'background-color: #8DB4E2; color: black;'
+    cor_fundo1 = 'background-color: #DCE6F1; color: black;'
     # Cor 2: #DCE6F1
-    cor_fundo2 = 'background-color: #DCE6F1; color: black;'
+    cor_fundo2 = 'background-color: #FFFFFF; color: black;'
 
     if row.name % 2 == 0:
         return [cor_fundo1] * len(row) # Linha par
